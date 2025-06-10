@@ -1,0 +1,3 @@
+function prikaziPoruku() {
+    alert("Dobrodošao");
+  }

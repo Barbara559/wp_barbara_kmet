@@ -1,242 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moja Osobna Web Stranica</title>
+  <meta name="author" content="Barbara Kmet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="web.js"></script>
+  <style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: wheat;
+  padding-top: 60px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+ul.list-group li {
+  background-color: lightpink;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+
+  </style>
 </head>
-<body>
-    <h2>Barbara Kmet</h2>
+<body onload="prikaziPoruku()">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Moja Web Stranica</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#pocetna">Početna</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Početna sekcija -->
+  <section id="pocetna" class="container mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="https://www.unisb.hr/wp-content/uploads/design/logo_s_f.png" alt="Profilna slika" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-md-8">
+        <h1>Barbara Kmet</h1>
+        <p>Studentica sam <em>Učiteljskog studija u Slavonskom Brodu</em>. Dolazim iz lijepog Slavonskog Broda.
+            Oduijek sam željela raditi s djecom jer vjerujem da su odgoj i obrazovanje temelj svakog društva.
+            Volim učiti, istraživati i prenositi znanje drugima, a posebno me veseli kada nekome mogu nešto objasniti na jednostavan i zanimljiv način.
+            Strpljiva sam, volim timski rad i trudim se uvijek biti pozitivna i podržavajuća. Smatram da učiteljski poziv nosi veliku odgovornost,
+            ali i veliko ispunjenje, i zato sam odlučila upisati ovaj fakultet jer želim biti netko tko mijenja svijet nabolje, korak po korak, radeći s djecom. </p>
+      </div>
+    </div>
+
+    <!-- Vještine i hobiji -->
+    <div class="row mt-5">
+      <div class="col">
+        <h2>Moje vještine i hobiji</h2>
+        <ul class="list-group">
+          <li class="list-group-item"> <strong>Čuvanje životinja</strong></li>
+          <li class="list-group-item"><strong>Rad s djecom</strong></li>
+          <li class="list-group-item"><strong>Šetnja na Poloju</strong></li>
+          <li class="list-group-item"><strong>Dizajniranje web stranica</strong></li>
+        </ul>
+      </div>
+    </div>
+
     <br>
-    <h4>Zadace iz web programiranja:</h4>
-    <ul>
-        <li> <a href="zadace/zadaca 1.html"> Zadaca 1</a></li>
-        <li> <a href="zadace/zadaca2.html">Zadaca 2</a></li>
-        <li> <a href="zadace/zadaca3.html"></a>Zadaca 3</li>
-        <li>Zadaca 4</li>
-        <li>Zadaca 5</li>
-        <li>Zadaca 6</li>
-        
-    </ul>
- <!-- Tablice  -->
-  <h3>Tablice u HTMLu</h3>
-<table border="1"> 
-    <tr>
-        <th>Pon</th>
-        <th>Uto</th>
-        <th>Sri</th>
-    </tr>
-    <tr>
-        <td>Hrv</td>
-        <td>Mtd</td>
-        <td>Mat</td>
-    </tr>
-    <tr>
-        <td>Hrv</td>
-        <td>Mtd</td>
-        <td>Mat</td>
-    </tr>
-</table>
 
-<br>
 
-<table border="1">
-<tr>
-    <th colspan="2">Name</th>
-    <th>Lorem</th>
-</tr>
-<tr>
-<td>Lorem</td>
-<td>Lorem</td>
-<td>Lorem</td>
-</tr>
-<tr>
- <td>Lorem</td>
-<td>Lorem</td>
-<td>Lorem</td>
-</tr>
-<tr>
- <td>Lorem</td>
-<td>Lorem</td>
-<td>Lorem</td>
-</tr>
-<tr>
-<td>Lorem</td>
-<td>Lorem</td>
-<td>Lorem</td>
-</tr>
-
-</table>
-
-<br>
-
-<table border="1">
-<tr>
-<td rowspan="3">APRIL</td>
-<td>Lorem</td>
-<td>Lorem</td>
-</tr>
-<tr>
-<td>Lorem</td>
-<td>Lorem</td>
-</tr>
-<tr>
-<td>Lorem</td>
-<td>Lorem</td>
-</tr>
-<tr>
-<td>Lorem</td>
-<td>Lorem</td>
-<td>Lorem</td>
-</tr>
-<tr>
-<td>Lorem</td>
-<td>Lorem</td>
-<td>Lorem</td>
-</tr>
-</table>
-
-<br>
-<table border="1">
-
-    <tr>
-<th>No.</th>
-<th>Full name</th>
-<th>Position</th>
-<th>Salary</th>
-<th>Type</th>
-   </tr>
+    <div class="container mt-5">
+        <div class="row">
+          <!-- Kartica 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="https://static.jutarnji.hr/images/slike/2022/12/01/27153363.jpg" class="card-img-top" alt="Slika 1">
+              <div class="card-body">
+                <h5 class="card-title">ČUVANJE ŽIVOTINJA</h5>
+                <p class="card-text">Uživam u svakom trenutku provedenom s životinjama.</p>
+              </div>
+            </div>
+          </div>
+     
+          <!-- Kartica 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="https://www.slavonskibrod.net/content/images/024460_1.jpg" class="card-img-top" alt="Slika 2">
+              <div class="card-body">
+                <h5 class="card-title">ŠETNJA PO POLOJU</h5>
+                <p class="card-text">NAjviše me opusti lagana večernja šetnja po Poloju.</p>
+              </div>
+            </div>
+          </div>
+     
+          <!-- Kartica 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="https://blog.bid.hr/wp-content/uploads/2016/01/samostalna-besplatna-web-stranica.jpg" class="card-img-top" alt="Slika 3">
+              <div class="card-body">
+                <h5 class="card-title">Dizajniranje Web stranice</h5>
+                <p class="card-text"> Ovo sve što gledate i čitate o meni je moja Web stranica.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
    
-   <tr>
-<th>1</th>
-<td>Bill Gates</td>
-<td>Founder Microsoft </td>
-<td>$1000</td>
-<td rowspan="4">Company founder</td>
-   </tr>
 
-   <tr>
-    <th>2</th>
-    <td>Steve Jobs</td>
-    <td>Founder Apple</td>
-    <td>$1200</td>
-    
-   </tr>
-   <tr>
-<th>3</th>
-<td>Larry Page</td>
-<td>Founder Google</td>
-<td>$1100</td>
+ 
+   
 
+    <!-- Kontakt forma -->
+    <div class="row mt-5">
+      <div class="col-md-8">
+        <h2>Ako mi se Želite obratiti, slobodno napišite nešto.</h2>
+        <form method="GET">
+          <div class="row mb-3">
+            <div class="col">
+              <label for="ime" class="form-label">Ime</label>
+              <input type="text" class="form-control" id="ime" name="ime" required>
+            </div>
+            <div class="col">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="poruka" class="form-label">Poruka</label>
+            <textarea class="form-control" id="poruka" name="poruka" rows="5" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="datum" class="form-label">Odaberite datum</label>
+            <input type="date" class="form-control" id="datum" name="datum">
+          </div>
+          <button type="submit" class="btn btn-primary">Pošalji Poruku</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-   </tr>
-
-   <tr>
-    <th>4</th>
-    <td>Mark Zuckeberg</td>
-    <td>Founder Facebook</td>
-    <td>$1300</td>
-    
-   </tr>
-</table>
-
-<br>
-
-<!-- HTML forme -->
-<h3>HTML forme</h3>
-<form action="" method="get">
-    <label for="name">Unesi svoje ime:</label>
-    <input type="text" id="name"> <br>
-    <label for=""> Unesi prezime </label>
-    <input type="text" name="prezime" id="prezime" placeholder="Unesi prezime..." maxlength="20" size="10"> <br>
-<label >Unesi password :</label>
-<input type="password"> <br>
-<label >Izaberi boju</label>
-<input type="color" > <br>
-<label >Unesi datum</label>
-<input type="date" > <br>
-<label >Unesi email</label>
-<input type="email" required> <br>
-<label >Unesi broj telefona</label>
-<input type="tel"> <br>
-<label >Izaberi najbolji kolegij :</label> <br>
-<input type="radio" name="kolegij" id="matematika" value="matematika">
-<label for="matematika ">Matematika</label> <br>
-<input type="radio" name="kolegij" id="hrvatski" value="hrvatski">
-<label for="hrvatski ">Hrvatski</label> <br>
-<input type="radio" name="kolegij" id="Metodika" value="metodika">
-<label for="metodika ">Metodika</label> <br>
-<label >Najdraže boje:</label> <br>
-<input type="checkbox" name="boja1" id="boja1">
-<label for="boja1">Crvena</label> <br>
-<input type="checkbox" name="boja2" id="boja2">
-<label for="Boja2">Plava</label> <br>
-<input type="checkbox" name="boja3" id="boja3">
-<label for="Boja3">Zelena</label> <br>
-
-<h3>Registration form</h3>
-
-<label for="name">First name</label>
-<input type="text" id="name"> <br>
-<label for=""> Last name </label>
-<input type="text" name="prezime" id="prezime" > <br>
-<label for="name">Nick name</label>
-<input type="text" id="name"> <br>
-<label >Email</label>
-<input type="email" required> <br>
-<label >Password</label>
-<input type="password"> <br>
-<label >Date of birth</label>
-<input type="date" > <br>
-<label >Gender</label> <br>
-<input type="radio" name="gender" id="male" value="male">
-<label for="male ">Male</label> <br>
-<input type="radio" name="gender" id="female" value="female">
-<label for="female ">Female</label> <br>
-<input type="radio" name="gender" id="Other" value="Other">
-<label for="other ">Other</label> <br>
-<label >Mobile</label>
-<input type="tel"> <br>
-<label for="address">Address</label>
-<textarea name="address" id="address"></textarea> <br>
-<input type="submit" value="Submit">
-
-
-
-
-
-<input type="submit" value="Pošalji">
-</form>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cQIOL8M8fGU?si=P8NoPtBFC2dad74L" 
-title="YouTube video player" frameborder="0"
- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-<h3>Audio i video elementi u HTMLu</h3>
-
-  <video width="400" height="240">
-    <source src="assets/mov_bbb.mp4">
-    Your browser does not support HTML video.
-  </video>
-<br>
-  <audio controls>
-    <source src="horse.ogg" type="audio/ogg">
-    
-  Your browser does not support the audio element.
-  </audio>
-
-
-
-
-
-
-
-
-  
-
-
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
+
